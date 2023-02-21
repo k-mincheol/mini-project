@@ -1,0 +1,96 @@
+html,
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #18001e;
+}
+
+a {
+    text-decoration: none!important;
+    color: unset!important;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+header {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 0px 6px 0px grey;
+    /* -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px); */
+}
+
+header img {
+    height: 100%;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .header-right i {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+main {
+    height: 100%;
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(204, 204, 204);
+    padding: 1.5rem 2rem;
+    font-weight: bold;
+}
+
+footer nav a {
+    margin: 0 1rem;
+}
+
+footer .info {
+    font-size: 12px;
+    padding: 1.5rem 2rem;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .info p {
+    padding: 4px 0;
+    margin-right: 12px;
+    font-size: 12px;
+}

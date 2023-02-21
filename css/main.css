@@ -1,0 +1,64 @@
+main {
+    margin-top: 5rem;
+}
+
+.main-section img {
+    width: 100%;
+    height: 80%;
+}
+
+.section-inner {
+    padding: 3rem 7rem;
+    box-sizing: border-box;
+}
+
+.rank-list .swiper-wrapper .swiper-slide .rank-num {
+    font-size: 10rem;
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    transition: all 0.2s;
+}
+
+.rank-list .swiper-wrapper .swiper-slide div {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rank-list .swiper-wrapper img {
+    width: 70%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.rank-list .swiper-wrapper a {
+    display: contents;
+}
+
+.rank-list .swiper-wrapper img:hover {
+    transform: scale(1.2);
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.movie-list div {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.movie-list img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.movie-list img:hover {
+    transform: scale(1.2);
+}
