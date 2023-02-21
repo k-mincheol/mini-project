@@ -80,8 +80,27 @@
 
         .section-inner {
             margin: 3rem 0;
-            padding: 0 10rem;
+            padding: 0 7rem;
             box-sizing: border-box;
+        }
+
+        .section-inner .swiper-wrapper .swiper-slide {
+            overflow: hidden;
+            border-radius: 20px;
+        }
+
+        .section-inner .swiper-wrapper img {
+            width: 100%;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .section-inner .swiper-wrapper img:hover {
+            transform: scale(1.2);
+        }
+
+        .rank-list {
+            position: relative;
         }
     </style>
 </head>
@@ -108,17 +127,17 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide"><img src="./image/아이언맨1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/아이언맨2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/아이언맨3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/어벤져스1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/어벤져스2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/어벤져스3.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/어벤져스4.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./image/어벤져스1.jpg" alt=""></div>
                     </div>
                     <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
                 </div>
             </section>
         </main>
@@ -128,13 +147,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
+            slidesPerView: 5,
             spaceBetween: 30,
             freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
         });
     </script>
 </body>
